@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primaryColor:rgb(37, 251, 212);
+            --textColor:rgb(34, 64, 147);
+            --background:rgb(237, 144, 222);
+        }
+        body{
+            background-color: var(--background);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul>li{
+            text-transform: capitalize;
+            list-style: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            display: inline-flex;
+            padding: 12px;
+            font-weight: bolder;
+            color: var(--textColor);
+            
+        }
+        nav{
+            background-color:var(--primaryColor);
+            padding: 1px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>contact us</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
