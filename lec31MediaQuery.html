@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            height: 33px;
+            width: 82px;
+            border: 3px solid;
+        }
+        @media only screen and (max-width: 244px){
+            body{
+                background-color: aqua;
+            }
+            .boxes{
+                flex-direction: column ;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        hii i am a red man hahahahahaha
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>
