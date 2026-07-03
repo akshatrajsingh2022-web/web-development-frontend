@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid rebeccapurple;
+            display: flow-root;
+        }
+        .card{
+            border: 3px solid olive;
+        }
+        img{
+            float: left ;
+        }
+        div.cards>div.card:nth-child(3){
+            background-color: rgb(50, 238, 238);
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="239px" src="image.png" alt="">
+        <div class="card">card1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, perspiciatis id mollitia ut iure natus quaerat perferendis quis impedit consequuntur facere eligendi ratione doloremque libero aut quibusdam fugit, voluptatibus et?</div>
+        <div class="card">card2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi omnis quo quos molestiae quae quas expedita, sapiente suscipit possimus eligendi quod error earum dolores inventore cum pariatur ratione qui amet? Aperiam ea autem quibusdam dolores perferendis, praesentium tempora harum enim beatae quam! Voluptate ad commodi cupiditate, maxime possimus voluptatum doloremque nulla eaque iste quos consequatur, itaque saepe qui hic soluta cum, minima exercitationem laboriosam libero porro totam earum dicta facilis. Tempora tenetur minus labore a cum dolore voluptatum nobis aut inventore itaque excepturi debitis numquam in, sed deserunt repudiandae delectus placeat amet. Corrupti, tenetur doloremque eius ipsum saepe facilis, excepturi consequuntur suscipit consectetur exercitationem et quae consequatur eum id cum commodi ea nihil at ipsam dolor. Necessitatibus, ut blanditiis? Nesciunt aspernatur corporis quis consequatur deleniti quaerat blanditiis officiis cupiditate, dolore, natus magni.
+
+        </div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>
