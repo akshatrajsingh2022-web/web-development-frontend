@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+</head>
+<style>
+    .boxes *{
+        border: 3px solid mediumorchid;
+        text-transform: capitalize;
+    }
+    div.box:nth-child(1){
+        background-color: yellow ;
+    }
+    .box::first-line{
+        color: pink;
+    }
+    div.box:nth-child(2)::first-line{
+            background-color: rgb(222, 26, 26);
+        }
+    div.box:nth-child(3):hover::first-line{
+            background-color: orange;
+    }
+    [data-x="margin"]{
+        margin-left: 33px;
+    }
+    .boxes::before{
+        content: "this is before the staarting of content of boxes";
+        background-color: teal;
+        display: flex;
+        justify-content: center;
+        border: 2px solid yellowgreen;
+        border-radius: 33px;
+    }
+    .boxes::after{
+        content : "this is after the content of contenet of boxes";
+        color: rebeccapurple;
+    }
+    ::selection{
+        background-color: blueviolet;
+        color: yellow;
+    }
+    .box::first-letter{
+        color: rgb(28, 64, 194);
+
+    }
+    ::placeholder{
+        color: purple;
+        border: 3px solid red;
+        border-radius: 33px;
+    }
+
+</style>
+<body>
+    <div class="boxes">
+        <div class="box">hey i box1</div>
+        <div class="box">hey si am box2 Lorem ipsum dolor sit amet is earum ipsa quasi totam accusantium! Sit vel neque explicabo dagni sed facilis asperiores fuga! Quidem, fugiat sequi officiis hic quisquam fugit impedit a autem quod iusto tempore, vero sed earum quibusdam voluptas.
+        </div>
+        <div class="box" data-x="margin" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus reiciendis dignissimos quod voluptatibus, perspiciatis commodi dolorem quas eligendi quos obcaecati nemo distinctio consequatur nesciunt porro debitis nulla laboriosam necessitatibus.hey i am box3</div>
+        <a>djkdjfklsjdfhidfaf efd</a>
+        <span >djfkdjkjdjdjfdkfd</span>
+        <article>dkjfdjfkdkfkdkjakdl</article>
+        <input type="text" placeholder="hey type your name here">
+    </div>
+</body>
+</html>
